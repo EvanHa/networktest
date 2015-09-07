@@ -1,0 +1,12 @@
+tool
+
+http://gcc.gnu.org
+http://www.gnu.org/software/make
+http://www.gnu.org/software/gdb
+
+linux
+
+http://www.tldp.org
+http://www.kldp.org
+http://www.unix.or.kr
+http://www.lug.or.kr
