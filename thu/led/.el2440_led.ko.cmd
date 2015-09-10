@@ -1,0 +1,1 @@
+cmd_/root/work/git/networktest/thu/led/el2440_led.ko := arm-linux-gnu-ld -EL -r    -o /root/work/git/networktest/thu/led/el2440_led.ko /root/work/git/networktest/thu/led/el2440_led.o /root/work/git/networktest/thu/led/el2440_led.mod.o

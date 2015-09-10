@@ -1,0 +1,1 @@
+cmd_/root/work/git/networktest/thu/homework/led_driver.ko := arm-linux-gnu-ld -EL -r    -o /root/work/git/networktest/thu/homework/led_driver.ko /root/work/git/networktest/thu/homework/led_driver.o /root/work/git/networktest/thu/homework/led_driver.mod.o

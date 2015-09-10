@@ -1,0 +1,1 @@
+cmd_/root/elayer/device_driver/el2440-driver/hello_module/hello_module.ko := arm-linux-gnu-ld -EL -r    -o /root/elayer/device_driver/el2440-driver/hello_module/hello_module.ko /root/elayer/device_driver/el2440-driver/hello_module/hello_module.o /root/elayer/device_driver/el2440-driver/hello_module/hello_module.mod.o
