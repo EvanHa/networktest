@@ -34,28 +34,12 @@ main( )
 
 	while(1) {
 		if((n = read(0, sndBuffer, BUFSIZ)) > 0) {
-
 			sndBuffer[n] = '\0';
-			if(!strcmp(sndBuffer, "quit\n")) break;
+			if(!strcmp(sndBuffer, "5\n")) break;
 
-			printf("original  Data : %s", sndBuffer);
 			if((n = write(c_socket, sndBuffer, strlen(sndBuffer))) < 0) {
 				return (-1);
 			}
-
-			n_left = n;
-			n_recv = 0;
-			while(n_left > 0) {
-				if((n=read(c_socket, &rcvBuffer[n_recv], n_left)) < 0) {
-					return (-1);
-				}
-
-				n_left = n_left - n;
-				n_recv = n_recv + n;
-			}
-
-			rcvBuffer[n_recv] = '\0';
-			printf("echoed Data : %s", rcvBuffer);
 		}
 	}
 	close(c_socket);

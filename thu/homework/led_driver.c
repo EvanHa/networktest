@@ -68,10 +68,10 @@ static ssize_t led_write(struct file *filp,const char __user *buf, size_t count,
 		  mode = 2;
 		  break;
 	  case '3':
-		  mode = 3;
+		  mode = 4;
 		  break;
 	  case '4':
-		  mode = 4;
+		  mode = 8;
 		  break;
 	  default:
 		  break;

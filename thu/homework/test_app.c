@@ -54,7 +54,6 @@ printf("c_socket : %d\n", c_socket);
 		printf("thread %x is created \n", thread_id);
 		sleep(3);
 	}
-	close(c_socket);
 	close(s_socket);
 	close(fd);
 }
@@ -65,12 +64,15 @@ void *func_thread(void *arg)
 	char rcvBuffer[BUFSIZ];
 	int c_socket = (int)arg;
 	printf("c_socket : %d\n", c_socket);
-	
+
 	while((n=read(c_socket, rcvBuffer, sizeof(rcvBuffer))) !=0)
 	{
 		rcvBuffer[n] = '\0';
 		printf("%s", rcvBuffer);
 		write(fd, rcvBuffer, n);
+		printf("...\n");
 	}
+	printf("out\n");
+	close(c_socket);
 }
 
